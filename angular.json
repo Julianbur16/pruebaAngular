@@ -25,9 +25,14 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
+              "node_modules/bootstrap/dist/css/bootstrap.rtl.min.css",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -94,5 +99,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "4adc69f3-2e83-477f-9a69-9c14b025f781"
   }
 }

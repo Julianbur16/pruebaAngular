@@ -1,0 +1,51 @@
+
+
+img{
+    width: 10%;
+}
+.navbar{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Bookman Old Style';
+    border: black 10px solid;
+    background-color: black;
+    color: white;
+}
+
+.cv_julian_burbano{
+    margin-left: 5%;
+}
+li{
+    list-style: none;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;  
+}
+.proyect{
+    margin-left: 20%;
+    
+}
+.menu_navbar{
+    font-size: 120%;
+}
+.contact a{
+    font-size: 120%;
+    border: black 8px solid;
+}
+
+.contact{
+    border: black 2px solid;
+}
+
+.contact button{
+    background-color: black;
+    color: white;
+}
+
+::ng-deep .custom-class {
+
+    background-color: rgb(0, 0, 0)!important;
+}

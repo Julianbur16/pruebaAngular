@@ -1,0 +1,54 @@
+
+<!--Barra de Navegacion-->
+<div class="navbar">
+    <div class="logo_header">
+        <img src="assets/LOGO_JB.png" >
+        <i class="cv_julian_burbano">CV Julian Burbano</i>
+    </div>
+    <div class="menu_navbar">
+        <a href="#">Perfil</a>
+        <a href="#" class="proyect"  [matMenuTriggerFor]="menu">Proyectos</a>
+        
+        <mat-menu #menu="matMenu" yPosition="above" class="custom-class">
+            <button mat-menu-item>Dibujo mecanico</button>
+            <button mat-menu-item>Programción</button>
+            <button mat-menu-item>Automatización</button>
+          </mat-menu>`
+        
+    </div>
+    <div class="contact">
+        <a href="https://www.linkedin.com/in/julian-alejandro-burbano-diaz-7475bb221/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/Julianbur16" target="_blank"><i class="bi bi-github"></i></a>
+        <a class="bi bi-envelope" data-bs-toggle="modal" data-bs-target="#ModalMessage"></a>
+
+    </div>
+</div>
+
+<!--Modal para enviar mensajes de correo-->
+<div class="modal fade" id="ModalMessage" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Nuevo mensaje</h5>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Asunto:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Mensaje:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
