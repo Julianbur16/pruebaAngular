@@ -1,0 +1,190 @@
+.body{
+    border : 0px;
+    outline : 0px;
+    padding : 0px;
+    margin : 0px;
+    
+    background-image: url("assets_body/Background_body.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;  
+    
+}
+
+.nombres{
+    padding-top: 1%;
+    margin-left: 30%;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.nombres .apellido{
+    font-weight: bold;
+}
+
+.profesion{
+    margin-left: 32%;
+}
+
+.information img{
+    margin-left: 5%;
+    width:10vw;
+
+
+}
+
+.information{
+    display: flex;
+}
+
+.information_acerca_de{
+
+    margin-left: 2%;
+    margin-right: 3%;
+}
+
+.imag_text{
+    display: flex;
+}
+.slider_imag{
+    margin-left: 2%;
+    margin-right: 4%;
+}
+
+.slider_imag1{
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+.img_of_slider img{
+    width: 40vw;
+    height: 22vw;
+}
+
+.img_of_slider1 img{
+    width: 70vw;
+    height: 45vw;
+}
+
+.img_of_slider1 h6{
+    text-align: center;
+}
+
+.img_of_slider h6{
+    text-align: center;
+}
+.buttons_slider{
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    
+}
+
+.buttons_slider a{
+    text-decoration: none;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.flags{
+    display: flex;
+    justify-content:space-around;
+    gap: 4px;
+}
+
+.title_education{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.Education{
+    margin-left: 5%;
+    margin-right: 5%;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.School img{
+    width: 13.5vw;
+    height: 16vw;
+}
+
+.University img{
+    width: 12vw;
+    height: 15vw;
+}
+
+.Ingles_ipt img{
+    width: 18vw;
+    height: 9vw;
+}
+
+.Education .centrar{
+    text-align: center;
+}
+
+.v-line{
+    border-left: 2px solid red;
+    height:110px;
+    left: 50%;
+}
+   
+.hability{
+    display:flex;
+    gap: 2rem;
+}
+
+.principal_habilities{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.double{
+    display: flex;
+    column-gap: 5rem;
+}
+
+.languages_skills{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;   
+}
+
+.languages_skills1{
+    margin-left: 5%;
+    margin-right: 5%;  
+}
+
+.languages_skills ul {
+    column-count: 4;
+    column-gap: 60px;
+    
+}
+
+.languages_skills1 ul {
+    column-count: 2;
+    column-gap: 60px;
+    
+}
+
+.list_of_database ul{
+    display: flex;
+    gap: 5rem;
+
+}
+
+.db{
+    margin-left: 33%;
+    margin-right: 36%;
+}
+
+.icon_fast{
+    color: rgb(40, 53, 172);
+}
+
+
+
+

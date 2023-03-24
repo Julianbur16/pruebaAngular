@@ -1,0 +1,59 @@
+{
+    "FOOTER": {
+        "LANGUAGE": "Idiomas",
+        "LANGUAGE1": "Espanhol",
+        "LANGUAGE2": "Inglês",
+        "LANGUAGE3": "Portugues",
+        "LANGUAGE4": "Frances",
+        "CONTACT": "Contato"
+    },
+
+    "BODY": {
+        "MAJOR": "Engenheiro Mecatrônico",
+        "ABOUT_OF": "Julian A. Burbano é formado em Engenharia Mecatrônica pela Universidade de Pamplona, localizada no Norte de Santander, Colômbia, é um apaixonado por diferentes linguagens de programação, com grande capacidade em criar interfaces funcionais para solucionar necessidades em diversos campos. Da mesma forma, obteve conhecimento na área de automação de processos industriais através da gestão de sistemas eletrônicos e softwares de desenho CAD. No decorrer do aprendizado e da experiência, desenvolveu a aptidão para gerar um bom trabalho em equipe, sendo este o grande responsável pelo ótimo desempenho em cada desafio proposto.",
+        "ABOUT":"Sobre Julian",
+        "LANGUAGES_SPEAK": "línguas",
+        "LANGUAGES_SPEAK1": "Espanhol nativo",
+        "LANGUAGES_SPEAK2": "Inglês intermediário",
+        "EDUCATION": "Educação",
+        "EDUCATION11": "Universidade de Pamplona",
+        "EDUCATION12": "Pamplona Norte de Santander",
+        "EDUCATION13": "engenheiro mecatrônico",
+        "EDUCATION21": "IPT Inglês Para Todos",
+        "EDUCATION22": "Pamplona Norte de Santander",
+        "EDUCATION23": "Técnico Inglês",
+        "EDUCATION31": "Sucre Instituição Educacional",
+        "EDUCATION32": "Ipiales Nariño",
+        "EDUCATION33": "Bacharel acadêmico",
+        "SOFTWARE_SKILL": "habilidades em software", 
+        "SOFTWARE_SKILL1": "Desenho mecânico",
+        "SOFTWARE_SKILL2": "Ambientes de",
+        "SOFTWARE_SKILL21": "programação",
+        "SOFTWARE_SKILL3": "IDE para micro-",
+        "SOFTWARE_SKILL31": "controladores",
+        "SOFTWARE_SKILL4": "IDE para con-",
+        "SOFTWARE_SKILL41": "troladores",
+        "SOFTWARE_SKILL5": "Outros",
+        "PROGRAM_LANGUAGE": "Linguagens de programação e frameworks",
+        "SOFT_SKILL": "Habilidades interpessoais",
+        "SOFT_SKILL1": "Trabalho em grupo",
+        "SOFT_SKILL2": "Autodidata",
+        "SOFT_SKILL3": "Adaptabilidade",
+        "SOFT_SKILL4": "Dedicação",
+        "SOFT_SKILL5": "Detalhado",
+        "SOFT_SKILL6": "Noivo",
+        "DB": "Bases de dados"
+        
+    },
+
+    "HEADER": {
+        "PROFILE": "Perfil",
+        "PROJECTS": "Projectos"
+      },
+
+      "HEADER_PROJECTS": {
+        "DRAW_MECHANICS": "Dibujo mecanico",
+        "PROGRAMATION": "Programación",
+        "AUTOMATION":"Automatización"
+      }
+}

@@ -1,0 +1,60 @@
+{
+    "FOOTER": {
+      "LANGUAGE": "languages",
+      "LANGUAGE1": "Spanish",
+      "LANGUAGE2": "Englis",
+      "LANGUAGE3": "Portuguese",
+      "LANGUAGE4": "French",
+      "CONTACT": "Contact"
+    },
+
+    "BODY": {
+        "ABOUT":"About Julian",
+        "MAJOR": "Mechatronics Engineer",
+        "ABOUT_OF": "Julian A. Burbano obtained a degree in Mechatronics Engineering from the University of Pamplona, ​​located in Norte de Santander, Colombia. He is passionate about different programming languages, with great capacity in creating functional interfaces to solve needs in various fields. Likewise, he obtained knowledge in the area of ​​industrial process automation through the management of electronic systems and CAD design software. In the course of learning and experience, he has developed the aptitude to generate good teamwork, this being largely responsible for optimal performance in each proposed challenge.",
+        "LANGUAGES_SPEAK": "languages",
+        "LANGUAGES_SPEAK1": "Native Spanish",
+        "LANGUAGES_SPEAK2": "Intermediate English",
+        "EDUCATION": "Education",
+        "EDUCATION11": "University of Pamplona",
+        "EDUCATION12": "Pamplona North of Santander",
+        "EDUCATION13": "Mechatronics engineer",
+        "EDUCATION21": "IPT English For All",
+        "EDUCATION22": "Pamplona North of Santander",
+        "EDUCATION23": "English Technician",
+        "EDUCATION31": "Sucre Educational Institution",
+        "EDUCATION32": "Ipiales Narino",
+        "EDUCATION33": "Academic Bachelor",
+        "SOFTWARE_SKILL": "Software Skills",
+        "SOFTWARE_SKILL1": "Drawing Mechanic",
+        "SOFTWARE_SKILL2": "Environments of ",
+        "SOFTWARE_SKILL21": "Programming",
+        "SOFTWARE_SKILL3": "IDE for micro-",
+        "SOFTWARE_SKILL31": "controllers",
+        "SOFTWARE_SKILL4": "IDE for ",
+        "SOFTWARE_SKILL41": "controllers",
+        "SOFTWARE_SKILL5": "Others",
+        "PROGRAM_LANGUAGE": "Programming languages and frameworks",
+        "SOFT_SKILL": "Soft Skills",
+        "SOFT_SKILL1": "Team work",
+        "SOFT_SKILL2": "Self taught",
+        "SOFT_SKILL3": "Adaptability",
+        "SOFT_SKILL4": "Dedication",
+        "SOFT_SKILL5": "Retailer",
+        "SOFT_SKILL6": "Engaged",
+        "DB": "Databases"
+      },
+
+      "HEADER": {
+        "PROFILE": "Profile",
+        "PROJECTS": "Projects"
+      },
+
+      "HEADER_PROJECTS": {
+        "DRAW_MECHANICS": "Mechanical drawing",
+        "PROGRAMATION": "Programation",
+        "AUTOMATION":"Automation"
+      }
+
+  }
+  

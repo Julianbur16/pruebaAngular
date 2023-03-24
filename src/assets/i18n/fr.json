@@ -1,0 +1,62 @@
+{
+    "FOOTER": {
+        "LANGUAGE": "Expressions idiomatiques",
+        "LANGUAGE1": "Espagnol",
+        "LANGUAGE2": "Anglais",
+        "LANGUAGE3": "Portugais",
+        "LANGUAGE4": "Frances",
+        "CONTACT": "Contact:"
+    },
+
+    "BODY": {
+        "MAJOR": "Ingénieur mécatronique",
+        "ABOUT_OF": "Julian A. Burbano a obtenu un diplôme en ingénierie mécatronique de l'Université de Pampelune, située à Norte de Santander, en Colombie.Il est passionné par différents langages de programmation, avec une grande capacité à créer des interfaces fonctionnelles pour répondre aux besoins dans divers domaines. De même, il a acquis des connaissances dans le domaine de l'automatisation des processus industriels grâce à la gestion de systèmes électroniques et de logiciels de conception CAO. Au fil des apprentissages et des expériences, il a développé l'aptitude à générer un bon travail d'équipe, ce qui est en grande partie responsable d'une performance optimale dans chaque défi proposé.",
+        "ABOUT":"À propos de Julien",
+        "LANGUAGES_SPEAK": "langues",
+        "LANGUAGES_SPEAK1": "Espagnol natif",
+        "LANGUAGES_SPEAK2": "Anglais intermédiaire",
+        "EDUCATION": "Éducation",
+        "EDUCATION11": "Université de Pamplona",
+        "EDUCATION12": "Pampelune au nord de Santander",
+        "EDUCATION13": "Ingénieur mécatronique",
+        "EDUCATION21": "IPT Anglais pour tous",
+        "EDUCATION22": "Pampelune au nord de Santander",
+        "EDUCATION23": "Technicien anglais",
+        "EDUCATION31": "Sucré Établissement d'enseignement",
+        "EDUCATION32": "Ipiales Nariño",
+        "EDUCATION33": "Baccalauréat académique",
+        "SOFTWARE_SKILL": "compétences de logiciels", 
+        "SOFTWARE_SKILL1": "Dessin mécanique",
+        "SOFTWARE_SKILL2": "environnements de",
+        "SOFTWARE_SKILL21": "programmation",
+        "SOFTWARE_SKILL3": "IDE para micro-",
+        "SOFTWARE_SKILL31": "controladores",
+        "SOFTWARE_SKILL4": "IDE para con-",
+        "SOFTWARE_SKILL41": "troladores",
+        "SOFTWARE_SKILL5": "Autres",
+        "PROGRAM_LANGUAGE": "Langages de programmation et frameworks",
+        "SOFT_SKILL": "Compétences non techniques",
+        "SOFT_SKILL1": "Travail en équipe",
+        "SOFT_SKILL2": "Autocrate",
+        "SOFT_SKILL3": "Adaptabilité",
+        "SOFT_SKILL4": "Dévouement",
+        "SOFT_SKILL5": "Détaillé",
+        "SOFT_SKILL6": "Engagé",
+        "DB": "Base de données"
+        
+    },
+
+    "HEADER": {
+        "PROFILE": "Profil",
+        "PROJECTS": "Projets"
+      },
+
+      "HEADER_PROJECTS": {
+        "DRAW_MECHANICS": "Dibujo mecanico",
+        "PROGRAMATION": "Programación",
+        "AUTOMATION":"Automatización"
+      }
+}
+
+
+    

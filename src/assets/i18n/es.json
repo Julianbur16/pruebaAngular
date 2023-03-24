@@ -1,0 +1,62 @@
+{
+    "FOOTER": {
+        "LANGUAGE": "Lenguajes",
+        "LANGUAGE1": "Español",
+        "LANGUAGE2": "Ingles",
+        "LANGUAGE3": "Portugues",
+        "LANGUAGE4": "Frances",
+        "CONTACT": "Contacto"
+    },
+
+    "BODY": {
+        "MAJOR": "Ingeniero En Mecatrónica",
+        "ABOUT_OF": "Julian A. Burbano obtuvo el título de Ingeniero en Mecatrónica en la Universidad de Pamplona, ubicada en Norte de Santander, Colombia, es un apasionado por los diferentes lenguajes de programación, con gran capacidad en la creación de interfaces funcionales para dar solución a necesidades en diversos campos. Así mismo obtuvo conocimientos en el área de la automatización de procesos industriales a través del manejo de sistemas electrónicos y software de diseño CAD. En el transcurso del aprendizaje y experiencia ha desarrollado la aptitud para generar un buen trabajo en equipo, siendo esta en gran medida la responsable de un óptimo rendimiento en cada reto propuesto.",
+        "ABOUT":"Acerca de Julian",
+        "LANGUAGES_SPEAK": "Idiomas",
+        "LANGUAGES_SPEAK1": "Español: Nativo",
+        "LANGUAGES_SPEAK2": "Ingles: Intermedio",
+        "EDUCATION": "Educación",
+        "EDUCATION11": "Universidad de Pamplona",
+        "EDUCATION12": "Pamplona Norte de Santander",
+        "EDUCATION13": "Ingeniero En Mecatrónica",
+        "EDUCATION21": "IPT Ingles Para Todos",
+        "EDUCATION22": "Pamplona Norte de Santander",
+        "EDUCATION23": "Tecnico En Ingles",
+        "EDUCATION31": "Institución Educativa Sucre",
+        "EDUCATION32": "Ipiales Nariño",
+        "EDUCATION33": "Bachiller Academico",
+        "SOFTWARE_SKILL": "Habilidades de software", 
+        "SOFTWARE_SKILL1": "Dibujo mecanico",
+        "SOFTWARE_SKILL2": "Entornos de",
+        "SOFTWARE_SKILL21": "programación",
+        "SOFTWARE_SKILL3": "IDE para micro-",
+        "SOFTWARE_SKILL31": "controladores",
+        "SOFTWARE_SKILL4": "IDE para con-",
+        "SOFTWARE_SKILL41": "troladores",
+        "SOFTWARE_SKILL5": "Otros",
+        "PROGRAM_LANGUAGE": "Lenguajes de programación y frameworks",
+        "SOFT_SKILL": "Habilidades blandas",
+        "SOFT_SKILL1": "Trabajo en grupo",
+        "SOFT_SKILL2": "Autodidacta",
+        "SOFT_SKILL3": "Adaptabilidad",
+        "SOFT_SKILL4": "Dedicación",
+        "SOFT_SKILL5": "Detallsita",
+        "SOFT_SKILL6": "Comprometido",
+        "DB": "Bases de datos"
+        
+    },
+
+    "HEADER": {
+        "PROFILE": "Perfil",
+        "PROJECTS": "Proyectos"
+      },
+
+      "HEADER_PROJECTS": {
+        "DRAW_MECHANICS": "Dibujo mecanico",
+        "PROGRAMATION": "Programación",
+        "AUTOMATION":"Automatización"
+      }
+}
+
+
+    

@@ -1,0 +1,56 @@
+*{
+    color: white; 
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+}
+
+.list_language {
+    column-count: 2;
+    column-gap: 60px;
+}
+
+.icons_footer i{
+    font-size: 250%;
+    border: 15px solid black;
+}
+
+.footer li {
+    list-style: none;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+li:hover{
+    color: brown;
+}
+
+.select_laguage{
+    color: red;
+}
+
+.select_laguage:hover{
+    color: red;
+}
+
+.icon_fc:hover{
+    color: blue;
+}
+
+.icon_yt:hover{
+    color: rgb(255, 0, 0);
+}
+
+.icon_lk:hover{
+    color: blue;
+}
+
+.icon_gh:hover{
+    color: rgb(255, 0, 0);
+    
+}

@@ -6,20 +6,20 @@
         <i class="cv_julian_burbano">CV Julian Burbano</i>
     </div>
     <div class="menu_navbar">
-        <a href="#">Perfil</a>
-        <a href="#" class="proyect"  [matMenuTriggerFor]="menu">Proyectos</a>
+        <a routerLink="Perfil">{{ 'HEADER.PROFILE' | translate }}</a>
+        <a routerLink="#" class="proyect"  [matMenuTriggerFor]="menu">{{ 'HEADER.PROJECTS' | translate }}</a>
         
         <mat-menu #menu="matMenu" yPosition="above" class="custom-class">
-            <button mat-menu-item>Dibujo mecanico</button>
-            <button mat-menu-item>Programción</button>
-            <button mat-menu-item>Automatización</button>
-          </mat-menu>`
+            <button mat-menu-item (click)="Navegar('dibujo_mecanico')"> <i class="bi bi-nut"></i> {{ 'HEADER_PROJECTS.DRAW_MECHANICS' | translate }}</button>
+            <button mat-menu-item (click)="Navegar('programacion')"> <i class="bi bi-braces"></i> {{ 'HEADER_PROJECTS.PROGRAMATION' | translate }}</button>
+            <button mat-menu-item (click)="Navegar('automatizacion')"><i class="bi bi-robot"></i> {{ 'HEADER_PROJECTS.AUTOMATION' | translate }}</button>
+          </mat-menu>
         
     </div>
     <div class="contact">
-        <a href="https://www.linkedin.com/in/julian-alejandro-burbano-diaz-7475bb221/" target="_blank"><i class="bi bi-linkedin"></i></a>
-        <a href="https://github.com/Julianbur16" target="_blank"><i class="bi bi-github"></i></a>
-        <a class="bi bi-envelope" data-bs-toggle="modal" data-bs-target="#ModalMessage"></a>
+        <a href="https://www.linkedin.com/in/julian-alejandro-burbano-diaz-7475bb221/" target="_blank"><i class="bi bi-linkedin icon_linkedin"></i></a>
+        <a href="https://github.com/Julianbur16" target="_blank"><i class="bi bi-github icon_github"></i></a>
+        <a href="#" class="bi bi-envelope icon_message" data-bs-toggle="modal" data-bs-target="#ModalMessage"></a>
 
     </div>
 </div>
@@ -27,25 +27,37 @@
 <!--Modal para enviar mensajes de correo-->
 <div class="modal fade" id="ModalMessage" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
+      <div class="modal-content colorbrown">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Nuevo mensaje</h5>
         </div>
         <div class="modal-body">
           <form>
+
             <div class="mb-3">
-              <label for="recipient-name" class="col-form-label">Asunto:</label>
-              <input type="text" class="form-control" id="recipient-name">
+              <label for="recipient-name" class="col-form-label colortexformail">*Correo electonico del remitente:</label>
+              <input type="email" class="form-control transparetns" placeholder="xxxxxx@gmail.com" id="recipient-name " name="primaryEmail" [(ngModel)]="primaryEmail" ><i *ngIf="primaryEmail == secondEmail && secondEmail != '' && secondEmail != null" class="bi bi-check2 checkinto1"></i>
             </div>
+
             <div class="mb-3">
-              <label for="message-text" class="col-form-label">Mensaje:</label>
-              <textarea class="form-control" id="message-text"></textarea>
+              <label for="recipient-name" class="col-form-label colortexformail">*Confirmar Correo:</label>
+              <input type="email" class="form-control transparetns" onpaste="return false" id="recipient-name" placeholder="xxxxxx@gmail.com" name="secondEmail" [(ngModel)]="secondEmail"><i *ngIf="primaryEmail == secondEmail && secondEmail != '' && secondEmail != null" class="bi bi-check2 checkinto"></i>
+            </div>
+
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label colortexformail">Asunto:</label>
+              <input type="text"  class="form-control transparetns" id="recipient-name">
+            </div>
+
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label colortexformail">Mensaje:</label>
+              <textarea class="form-control transparetns" id="message-text"></textarea>
             </div>
           </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Send message</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Enviar</button>
         </div>
       </div>
     </div>
