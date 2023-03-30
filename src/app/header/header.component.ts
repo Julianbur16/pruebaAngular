@@ -40,7 +40,7 @@ export class HeaderComponent implements OnInit {
       "name": "Jeimy Alejandra Chalpartar Rosero",
       "email": "alejachalpartar16@gmail.com",
       "phone": "3157683324",
-      "message": "Podrias enviame tu curriculum completo"
+      "message": "si envia"
     };
     let url='http://apirestforcv-production.up.railway.app/api/clients';
 
