@@ -1,3 +1,25 @@
 *{
     color: white;
 }
+
+.buttonselect button{
+    background-color: black;
+    color: red;
+    border: none;
+}
+
+.buttondontselect button{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.buttondontselect button:hover{
+    color: brown;
+}
+
+.menu_ensambleparts{
+    display: flex;
+    gap: 3rem;
+    margin-left: 25%;
+}

@@ -55,5 +55,23 @@
         "DRAW_MECHANICS": "Dibujo mecanico",
         "PROGRAMATION": "Programación",
         "AUTOMATION":"Automatización"
+      },
+
+      "MODAL_FORM": {
+        "NEW_MESSAGE": "Nova mensagem",
+        "FULL_NAME": "Nome completo:",
+        "EMAIL": "Correio eletrônico:",
+        "CONFIRMATION_EMAIL": "Confirmar e-mail:",
+        "PHONE": "Número de contato na Colômbia:",
+        "MESSAGE": "Mensagem:",
+        "CLOSE": "Fechar",
+        "SEND": "Enviar"
+
+      },
+
+      "MODALCHECK_FORM": {
+        "MESSAGE_SENT": "Mensagem enviada",
+        "TEXT_MAIN": "Sua mensagem foi enviada corretamente",
+        "TEXT": "Confira a confirmação no e-mail digitado"
       }
 }

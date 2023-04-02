@@ -16,6 +16,8 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { BodyDrawMechanicsComponent } from './body-draw-mechanics/body-draw-mechanics.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BodyProgramationComponent } from './body-programation/body-programation.component';
+import { BodyAutomationComponent } from './body-automation/body-automation.component';
 
 
 @NgModule({
@@ -25,6 +27,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BodyComponent,
     FooterComponent,
     BodyDrawMechanicsComponent,
+    BodyProgramationComponent,
+    BodyAutomationComponent,
    
   ],
   imports: [

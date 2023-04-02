@@ -24,7 +24,7 @@ export class HeaderComponent implements OnInit {
       fulname: ['', Validators.required],
       mail: ['', [Validators.required, Validators.pattern("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$")]],
       confirmationmail: ['', Validators.required],
-      subjects: ['', Validators.required],
+      subjects: ['', Validators.pattern("^[3]{1}[0-2]{1}[0-9]{8}$")],
       texttask: ['', Validators.required]
     });
   
@@ -37,12 +37,12 @@ export class HeaderComponent implements OnInit {
   }
   submitdata(){
     this.items={
-      "name": "Jeimy Alejandra Chalpartar Rosero",
-      "email": "alejachalpartar16@gmail.com",
-      "phone": "3157683324",
-      "message": "si envia"
+      "name": this.formmessage.controls['fulname'].value,
+      "email": this.formmessage.controls['mail'].value,
+      "phone": this.formmessage.controls['subjects'].value,
+      "message": this.formmessage.controls['texttask'].value
     };
-    let url='http://apirestforcv-production.up.railway.app/api/clients';
+    let url='https://apirestforcv-production.up.railway.app/api/clients';
 
     this.formmessage.reset();
 
@@ -61,6 +61,14 @@ export class HeaderComponent implements OnInit {
 
     if(propiedad == 'dibujo_mecanico'){
       this.router.navigate(['/Dibujo_mecanico']);  
+    }
+
+    if(propiedad == 'automation'){
+      this.router.navigate(['/Automation']);  
+    }
+
+    if(propiedad == 'programation'){
+      this.router.navigate(['/Programmation']);  
     }
   }
 

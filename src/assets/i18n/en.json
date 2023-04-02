@@ -54,6 +54,23 @@
         "DRAW_MECHANICS": "Mechanical drawing",
         "PROGRAMATION": "Programation",
         "AUTOMATION":"Automation"
+      },
+
+      "MODAL_FORM": {
+        "NEW_MESSAGE": "New message",
+        "FULL_NAME": "Full name:",
+        "EMAIL": "Email:",
+        "CONFIRMATION_EMAIL": "Confirm Email:",
+        "PHONE": "Contact number in Colombia:",
+        "MESSAGE": "Message",
+        "CLOSE": "Close",
+        "SEND": "Send"
+      },
+
+      "MODALCHECK_FORM": {
+        "MESSAGE_SENT": "Message sent",
+        "TEXT_MAIN": "Your message has been sent correctly",
+        "TEXT": "Check the confirmation in the typed email"
       }
 
   }

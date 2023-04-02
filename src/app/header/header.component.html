@@ -7,12 +7,12 @@
     </div>
     <div class="menu_navbar">
         <a routerLink="Perfil">{{ 'HEADER.PROFILE' | translate }}</a>
-        <a routerLink="#" class="proyect"  [matMenuTriggerFor]="menu">{{ 'HEADER.PROJECTS' | translate }}</a>
+        <a routerLink="" class="proyect"  [matMenuTriggerFor]="menu">{{ 'HEADER.PROJECTS' | translate }}</a>
         
         <mat-menu #menu="matMenu" yPosition="above" class="custom-class">
             <button mat-menu-item (click)="Navegar('dibujo_mecanico')"> <i class="bi bi-nut"></i> {{ 'HEADER_PROJECTS.DRAW_MECHANICS' | translate }}</button>
-            <button mat-menu-item (click)="Navegar('programacion')"> <i class="bi bi-braces"></i> {{ 'HEADER_PROJECTS.PROGRAMATION' | translate }}</button>
-            <button mat-menu-item (click)="Navegar('automatizacion')"><i class="bi bi-robot"></i> {{ 'HEADER_PROJECTS.AUTOMATION' | translate }}</button>
+            <button mat-menu-item (click)="Navegar('programation')"> <i class="bi bi-braces"></i> {{ 'HEADER_PROJECTS.PROGRAMATION' | translate }}</button>
+            <button mat-menu-item (click)="Navegar('automation')"><i class="bi bi-robot"></i> {{ 'HEADER_PROJECTS.AUTOMATION' | translate }}</button>
           </mat-menu>
         
     </div>
@@ -29,40 +29,40 @@
     <div class="modal-dialog">
       <div class="modal-content colorbrown">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Nuevo mensaje</h5>
+          <h5 class="modal-title" id="exampleModalLabel">{{ 'MODAL_FORM.NEW_MESSAGE' | translate }}</h5>
         </div>
         <div class="modal-body">
           <form [formGroup]="formmessage" (submit)="submitdata()" id="formmessage" name="formmessage">
 
             <div class="mb-3">
-              <label for="recipient-name" class="col-form-label colortexformail">*Nombre completo</label>
+              <label for="recipient-name" class="col-form-label colortexformail">*{{ 'MODAL_FORM.FULL_NAME' | translate }}</label>
               <input type="text"  formControlName="fulname" class="form-control transparetns" id="recipient-name" autocomplete="off">
             </div>
 
             <div class="mb-3">
-              <label for="recipient-name" class="col-form-label colortexformail">*Correo electonico del remitente:</label>
+              <label for="recipient-name" class="col-form-label colortexformail">*{{ 'MODAL_FORM.EMAIL' | translate }}</label>
               <input type="email" class="form-control transparetns" placeholder="xxxxxx@gmail.com" id="recipient-name " name="primaryEmail" [(ngModel)]="primaryEmail" formControlName="mail" autocomplete="off"><i *ngIf="formmessage.controls['mail'].valid " class="bi bi-check2 checkinto"></i><i *ngIf="!formmessage.controls['mail'].valid " class="bi bi-circle dontcheckinto"></i>
             </div>
 
             <div class="mb-3">
-              <label for="recipient-name" class="col-form-label colortexformail">*Confirmar Correo:</label>
+              <label for="recipient-name" class="col-form-label colortexformail">*{{ 'MODAL_FORM.CONFIRMATION_EMAIL' | translate }}</label>
               <input type="email" class="form-control transparetns" onpaste="return false" id="recipient-name" placeholder="xxxxxx@gmail.com" name="secondEmail" [(ngModel)]="secondEmail" formControlName="confirmationmail" autocomplete="off"><i *ngIf="primaryEmail == secondEmail && secondEmail != '' && secondEmail != null" class="bi bi-check2 checkinto1"></i><i *ngIf="primaryEmail != secondEmail || secondEmail == '' || secondEmail == null" class="bi bi-circle dontcheckinto1"></i>
             </div>
 
             <div class="mb-3">
-              <label for="recipient-name" class="col-form-label colortexformail">*Asunto:</label>
-              <input type="text"  class="form-control transparetns" id="recipient-name" formControlName="subjects" autocomplete="off">
+              <label for="recipient-name" class="col-form-label colortexformail">{{ 'MODAL_FORM.PHONE' | translate }}</label>
+              <input type="text"  class="form-control transparetns" id="recipient-name" formControlName="subjects" autocomplete="off"><i *ngIf="formmessage.controls['subjects'].valid && formmessage.controls['subjects'].value != '' && formmessage.controls['subjects'].value != null " class="bi bi-check2 checkinto2"></i><i *ngIf="!formmessage.controls['subjects'].valid && formmessage.controls['subjects'].value != ''" class="bi bi-circle dontcheckinto2"></i>
             </div>
 
             <div class="mb-3">
-              <label for="message-text" class="col-form-label colortexformail">*Mensaje:</label>
+              <label for="message-text" class="col-form-label colortexformail">*{{ 'MODAL_FORM.MESSAGE' | translate }}:</label>
               <textarea class="form-control transparetns" id="message-text"formControlName="texttask"></textarea>
             </div>
           </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="submit" form="formmessage" class="btn btn-primary" [disabled]="!formmessage.valid" data-bs-dismiss="modal" >Enviar</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ 'MODAL_FORM.CLOSE' | translate }}</button>
+          <button type="submit" form="formmessage" class="btn btn-primary" [disabled]="!formmessage.valid || !(primaryEmail == secondEmail)" data-bs-dismiss="modal" >{{ 'MODAL_FORM.SEND' | translate }}</button>
         </div>
       </div>
     </div>
@@ -74,12 +74,12 @@
     <div class="modal-dialog">
       <div class="modal-content colorblack">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Mensaje enviado</h5>
+          <h5 class="modal-title" id="exampleModalLabel">{{ 'MODALCHECK_FORM.MESSAGE_SENT' | translate }}</h5>
         </div>
         <div class="modal-body">
           <i class="bi bi-check-circle checksend" ></i>
-          <h5>Su mensaje ha sido enviado correctamente</h5>
-          <h6>Revisa la confirmación en el correo digitado</h6>
+          <h5>{{ 'MODALCHECK_FORM.TEXT_MAIN' | translate }}</h5>
+          <h6>{{ 'MODALCHECK_FORM.TEXT' | translate }}</h6>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
