@@ -1,6 +1,8 @@
 import { Component, OnDestroy, OnInit, HostListener} from '@angular/core';
 import {TranslateService} from "@ngx-translate/core";
-
+import { FormBuilder, FormGroup,  Validators } from '@angular/forms';
+import {HttpClient} from '@angular/common/http';
+declare var window: any;
 
 
 
@@ -12,6 +14,7 @@ import {TranslateService} from "@ngx-translate/core";
 export class BodyComponent implements OnInit, OnDestroy{
   ruta ='assets/linkedin.png';
   id = 0;
+  formmessage1: FormGroup;
   
   contador=1;
   circle1="bi bi-circle-fill";
@@ -27,11 +30,37 @@ export class BodyComponent implements OnInit, OnDestroy{
   control_double=true;
   control_languages_skills="languages_skills";
   control_list_of_database=true;
+  spinnerstatus=false;
 
   screenWidth: any;
   screenHeight: any;
 
-  constructor(private translate: TranslateService) {
+  formModal: any;
+  valueask='';
+  valorread=' ';
+  items={};
+  data:any;
+
+  titleforweb='Programación web';
+  titleforauto='Automatización y control industrial';
+  titleforembedded='Programación para sistemas embebidos';
+  titleforcad='Diseño mecánico en software CAD';
+  titlefordeep='Deep learning y Machine learning en visión artificial';
+
+
+  constructor(private translate: TranslateService,private fm:FormBuilder, private httpClient: HttpClient) {
+
+    this.formmessage1=fm.group({
+      texttask: ['', Validators.required]
+    });
+
+    this.translate.get('BODY_SLIDER').subscribe((data:any)=> {
+      this.titleforweb=data.WEB;
+      this.titleforauto=data.AUTO;
+      this.titleforembedded=data.EMBEDDED;
+      this.titleforcad=data.CAD;
+      this.titlefordeep=data.DEEP;
+     });
    
     this.screenWidth = window.innerWidth;
     this.screenHeight = window.innerHeight;
@@ -103,10 +132,16 @@ export class BodyComponent implements OnInit, OnDestroy{
   }
   
   ngOnInit() {
+
+    this.formModal = new window.bootstrap.Modal(
+      document.getElementById('chatMessage')
+    );
+
+
     this.callMethod();
     this.id = <any>setInterval(() => {
       this.callMethod(); 
-    }, 5000);
+    }, 4000);
 
   }
 
@@ -119,8 +154,16 @@ export class BodyComponent implements OnInit, OnDestroy{
 
   callMethod(){
 
+    this.translate.get('BODY_SLIDER').subscribe((data:any)=> {
+      this.titleforweb=data.WEB;
+      this.titleforauto=data.AUTO;
+      this.titleforembedded=data.EMBEDDED;
+      this.titleforcad=data.CAD;
+      this.titlefordeep=data.DEEP;
+     });
+
     if(this.contador == 1){
-      this.title_image="Programación web";
+      this.title_image=this.titleforweb;
       this.ruta ='assets/linkedin.png';
       this.circle1="bi bi-circle-fill icon_fast";
       this.circle2="bi bi-circle icon_fast";
@@ -129,8 +172,8 @@ export class BodyComponent implements OnInit, OnDestroy{
       this.circle5="bi bi-circle icon_fast";
     }
     if(this.contador == 2){
-      this.title_image="Automatización y control industrial";
-      this.ruta ='assets/images.png';
+      this.title_image=this.titleforauto;
+      this.ruta ='assets/instrumentacion.png';
       this.circle1="bi bi-circle icon_fast";
       this.circle2="bi bi-circle-fill icon_fast";
       this.circle3="bi bi-circle icon_fast";
@@ -138,7 +181,7 @@ export class BodyComponent implements OnInit, OnDestroy{
       this.circle5="bi bi-circle icon_fast";
     }
     if(this.contador == 3){
-      this.title_image="Programación para sistemas embebidos";
+      this.title_image=this.titleforembedded;
       this.ruta ='assets/nuk_fun.png';
       this.circle1="bi bi-circle icon_fast";
       this.circle2="bi bi-circle icon_fast";
@@ -148,7 +191,7 @@ export class BodyComponent implements OnInit, OnDestroy{
     }
 
     if(this.contador == 4){
-      this.title_image="Diseño mecánico en software CAD";
+      this.title_image=this.titleforcad;
       this.ruta ='assets/images.png';
       this.circle1="bi bi-circle icon_fast";
       this.circle2="bi bi-circle icon_fast";
@@ -158,8 +201,8 @@ export class BodyComponent implements OnInit, OnDestroy{
     }
 
     if(this.contador == 5){
-      this.title_image="Deep learning y Machine learning en visión artificial";
-      this.ruta ='assets/images.png';
+      this.title_image=this.titlefordeep;
+      this.ruta ='assets/deeplearning.png';
       this.circle1="bi bi-circle icon_fast";
       this.circle2="bi bi-circle icon_fast";
       this.circle3="bi bi-circle icon_fast";
@@ -175,8 +218,17 @@ export class BodyComponent implements OnInit, OnDestroy{
 
 
   change_image(id_image: number){
+
+    this.translate.get('BODY_SLIDER').subscribe((data:any)=> {
+      this.titleforweb=data.WEB;
+      this.titleforauto=data.AUTO;
+      this.titleforembedded=data.EMBEDDED;
+      this.titleforcad=data.CAD;
+      this.titlefordeep=data.DEEP;
+     });
+
     if(id_image == 1){
-      this.title_image="Programación web";
+      this.title_image=this.titleforweb;
       this.ruta ='assets/linkedin.png';
       this.circle1="bi bi-circle-fill icon_fast";
       this.circle2="bi bi-circle icon_fast";
@@ -186,8 +238,8 @@ export class BodyComponent implements OnInit, OnDestroy{
       this.contador=-1;
     }
     if(id_image == 2){
-      this.title_image="Automatización y control industrial";
-      this.ruta ='assets/images.png';
+      this.title_image=this.titleforauto;
+      this.ruta ='assets/instrumentacion.png';
       this.circle1="bi bi-circle icon_fast";
       this.circle2="bi bi-circle-fill icon_fast";
       this.circle3="bi bi-circle icon_fast";
@@ -196,7 +248,7 @@ export class BodyComponent implements OnInit, OnDestroy{
       this.contador=-1;
     }
     if(id_image == 3){
-      this.title_image="Programación para sistemas embebidos";
+      this.title_image=this.titleforembedded;
       this.ruta ='assets/nuk_fun.png';
       this.circle1="bi bi-circle icon_fast";
       this.circle2="bi bi-circle icon_fast";
@@ -207,7 +259,7 @@ export class BodyComponent implements OnInit, OnDestroy{
     }
 
     if(id_image == 4){
-      this.title_image="Diseño mecánico en software CAD";
+      this.title_image=this.titleforcad;
       this.ruta ='assets/images.png';
       this.circle1="bi bi-circle icon_fast";
       this.circle2="bi bi-circle icon_fast";
@@ -218,8 +270,8 @@ export class BodyComponent implements OnInit, OnDestroy{
     }
 
     if(id_image == 5){
-      this.title_image="Deep learning y Machine learning en visión artificial";
-      this.ruta ='assets/images.png';
+      this.title_image=this.titlefordeep;
+      this.ruta ='assets/deeplearning.png';
       this.circle1="bi bi-circle icon_fast";
       this.circle2="bi bi-circle icon_fast";
       this.circle3="bi bi-circle icon_fast";
@@ -228,4 +280,34 @@ export class BodyComponent implements OnInit, OnDestroy{
       this.contador=-1;
     }
   }
+
+
+  submitdata1(){
+    this.spinnerstatus=true;
+    this.items={
+      "message": this.formmessage1.controls['texttask'].value,
+      
+    };
+    let url='https://apirestforcv-production.up.railway.app/api/chat';
+
+
+    this.httpClient.post(url,this.items).subscribe(
+      response => {this.data = response;
+        this.valorread=this.data.choices[0].text.replace('\n\n',"");
+        this.spinnerstatus=false;
+        this.valueask='';
+        
+        },
+      error => console.error(error)
+    );
+    
+    
+ 
+  }
+
+  modalchat(){
+    this.formModal.show();
+  }
 }
+
+

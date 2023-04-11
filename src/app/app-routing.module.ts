@@ -11,7 +11,6 @@ const routes: Routes =[
   {path: 'Perfil',component: BodyComponent },
   {path: 'Dibujo_mecanico',component: BodyDrawMechanicsComponent},
   {path: 'Programmation',component: BodyProgramationComponent},
-  {path: 'Automation',component: BodyAutomationComponent}
 ];
 
 @NgModule({

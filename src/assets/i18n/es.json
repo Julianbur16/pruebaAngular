@@ -26,7 +26,7 @@
         "EDUCATION32": "Ipiales Nariño",
         "EDUCATION33": "Bachiller Academico",
         "SOFTWARE_SKILL": "Habilidades de software", 
-        "SOFTWARE_SKILL1": "Dibujo mecanico",
+        "SOFTWARE_SKILL1": "Dibujo mecánico",
         "SOFTWARE_SKILL2": "Entornos de",
         "SOFTWARE_SKILL21": "programación",
         "SOFTWARE_SKILL3": "IDE para micro-",
@@ -40,7 +40,7 @@
         "SOFT_SKILL2": "Autodidacta",
         "SOFT_SKILL3": "Adaptabilidad",
         "SOFT_SKILL4": "Dedicación",
-        "SOFT_SKILL5": "Detallsita",
+        "SOFT_SKILL5": "Detallista",
         "SOFT_SKILL6": "Comprometido",
         "DB": "Bases de datos"
         
@@ -52,7 +52,7 @@
       },
 
       "HEADER_PROJECTS": {
-        "DRAW_MECHANICS": "Dibujo mecanico",
+        "DRAW_MECHANICS": "Dibujo mecánico",
         "PROGRAMATION": "Programación",
         "AUTOMATION":"Automatización"
       },
@@ -73,6 +73,30 @@
         "MESSAGE_SENT": "Mensaje enviado",
         "TEXT_MAIN": "Su mensaje ha sido enviado correctamente",
         "TEXT": "Revisa la confirmación en el correo digitado"
+      },
+
+      "MODAL_CHATGPT":{
+        "HELLO":"HOLA",
+        "INDICATIONS":"Mi nombre es Nuk estoy capacitado para resolver preguntas acerca de la biografía, curriculum, y proyectos de Julian espero resolver todas tus dudas, por favor si tú quieres la repuesta en un idioma diferente al español, especifícalo en el mensaje, y si deseas un acercamiento directo puedes enviar un mensaje en la parte superior derecha de este sitio web, gracias.",
+        "MESSAGECHAT":"Mensaje",
+        "RESPONSE":"Respuesta"
+      },
+
+      "BODY_MECHA":{
+        "ASSEMBLY": "Ensambles",
+        "PART": "Partes"
+      },
+
+      "BODY_PROGRA":{
+        "EMBEDDED": "Sistemas embebidos"
+      },
+
+      "BODY_SLIDER":{
+        "WEB":"Programación web",
+        "AUTO":"Automatización y control industrial",
+        "EMBEDDED":"Programación para sistemas embebidos",
+        "CAD":"Diseño mecánico en software CAD",
+        "DEEP":"Deep learning y Machine learning en visión artificial"
       }
 }
 

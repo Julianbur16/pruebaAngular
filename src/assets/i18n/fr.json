@@ -5,7 +5,7 @@
         "LANGUAGE2": "Anglais",
         "LANGUAGE3": "Portugais",
         "LANGUAGE4": "Frances",
-        "CONTACT": "Contact:"
+        "CONTACT": "Contact"
     },
 
     "BODY": {
@@ -52,8 +52,8 @@
       },
 
       "HEADER_PROJECTS": {
-        "DRAW_MECHANICS": "Dibujo mecanico",
-        "PROGRAMATION": "Programación",
+        "DRAW_MECHANICS": "Dessin mécanique",
+        "PROGRAMATION": "Programmation",
         "AUTOMATION":"Automatización"
       },
 
@@ -73,6 +73,30 @@
         "MESSAGE_SENT": "Message envoyé",
         "TEXT_MAIN": "Votre message a été envoyé correctement",
         "TEXT": "Vérifiez la confirmation dans l'e-mail saisi"
+      },
+
+      "MODAL_CHATGPT":{
+        "HELLO":"SALUT",
+        "INDICATIONS":"Mon nom est Nuk et je suis formé pour répondre aux questions sur la biographie, le curriculum et les projets de Julian. J'espère répondre à toutes vos questions. Si vous souhaitez une réponse dans une langue autre que l'espagnol, veuillez le spécifier dans le message. Si vous souhaitez une approche directe, vous pouvez envoyer un message en haut à droite de ce site web. Merci.",
+        "MESSAGECHAT":"Message",
+        "RESPONSE":"Répondre"
+      },
+
+      "BODY_MECHA":{
+        "ASSEMBLY": "Assemblages",
+        "PART": "Parties"
+      },
+
+      "BODY_PROGRA":{
+        "EMBEDDED": "Systèmes embarqués"
+      },
+
+      "BODY_SLIDER":{
+        "WEB":"Programmation web",
+        "AUTO":"Automatisation et contrôle industriel",
+        "EMBEDDED":"Programmation pour les systèmes embarqués",
+        "CAD":"Conception mécanique dans un logiciel de CAO",
+        "DEEP":"Deep learning et Machine learning en vision artificielle"
       }
 }
 

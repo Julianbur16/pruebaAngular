@@ -1,5 +1,6 @@
 <div class="body">
     <br>
+    <img class="chat" src="assets\chatbot.png" alt="Chatbot" (click)="modalchat()">
     <div class="nombres">
         <p>Julian Alejandro</p>
         <p class="apellido">Burbano Diaz</p> 
@@ -35,11 +36,11 @@
             <img [src]="ruta" >
         </div>
         <div class="buttons_slider">
-            <a routerLink="#" (click)="change_image(1)"><i [class]="circle1"></i></a>
-            <a routerLink="#" (click)="change_image(2)"><i [class]="circle2"></i></a>
-            <a routerLink="#" (click)="change_image(3)"><i [class]="circle3"></i></a>
-            <a routerLink="#" (click)="change_image(4)"><i [class]="circle4"></i></a>
-            <a routerLink="#" (click)="change_image(5)"><i [class]="circle5"></i></a>
+            <a (click)="change_image(1)"><i [class]="circle1"></i></a>
+            <a (click)="change_image(2)"><i [class]="circle2"></i></a>
+            <a (click)="change_image(3)"><i [class]="circle3"></i></a>
+            <a (click)="change_image(4)"><i [class]="circle4"></i></a>
+            <a (click)="change_image(5)"><i [class]="circle5"></i></a>
         </div>
         
     </div>
@@ -217,3 +218,38 @@
 </div>
 </div>
 
+
+<!--Modal para enviar mensajes de correo-->
+<div class="modal fade" id="chatMessage" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content colorbrown">
+        <div class="modal-header header_chatmodal">
+          <p>{{ 'MODAL_CHATGPT.HELLO' | translate }}</p>
+          <p>{{ 'MODAL_CHATGPT.INDICATIONS' | translate }}</p>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="formmessage1" (submit)="submitdata1()" id="formmessage1" name="formmessage1">
+
+            <div class="mb-3">
+                <label for="message-text" class="col-form-label colortexformail">*{{ 'MODAL_CHATGPT.MESSAGECHAT' | translate }}:</label>
+                <textarea class="form-control transparetns" id="message-text" [(ngModel)]="valueask" formControlName="texttask" placeholder="How old is Julian ?, please answer in English"></textarea>
+              </div>
+
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label colortexformail">{{ 'MODAL_CHATGPT.RESPONSE' | translate }}:</label>
+              <textarea class="form-control transparetns1" id="message-text" readonly >{{valorread}}</textarea>
+            </div>
+
+            <div *ngIf="spinnerstatus" class="spinner-border text-primary" role="status">
+                <span class="sr-only"></span>
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ 'MODAL_FORM.CLOSE' | translate }}</button>
+          <button type="submit" form="formmessage1" class="btn btn-primary" [disabled]="!formmessage1.valid " >{{ 'MODAL_FORM.SEND' | translate }}</button>
+        </div>
+      </div>
+    </div>
+  </div>

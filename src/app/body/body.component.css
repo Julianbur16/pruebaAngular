@@ -10,7 +10,51 @@
     color: white;  
     
 }
+.colorbrown{
+    color: rgb(255, 255, 255);
+    background-color: rgb(55, 52, 53);
+    background-image: url("assets_body/Background_bodychat.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+}
 
+.header_chatmodal{
+    display: block;
+    text-align: center;
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+textarea{
+    height: 90px;
+}
+
+.colortexformail{
+    color: white;
+}
+
+.transparetns{
+    background: rgba(124, 124, 124, 0.5);
+    color: white;
+}
+
+.transparetns1{
+    background: rgba(124, 124, 124, 0.5);
+    color: white;
+    height: 150px;
+}
+
+.transparetns::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.chat{
+    position:fixed;
+    right: 20px;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+}
 .nombres{
     padding-top: 1%;
     margin-left: 30%;
@@ -77,6 +121,7 @@
     margin: 0%;
     padding: 0%;
     text-align: center;
+    cursor: pointer;
     
 }
 

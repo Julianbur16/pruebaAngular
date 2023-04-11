@@ -35,6 +35,7 @@ export class HeaderComponent implements OnInit {
       document.getElementById('myModal')
     );
   }
+  
   submitdata(){
     this.items={
       "name": this.formmessage.controls['fulname'].value,

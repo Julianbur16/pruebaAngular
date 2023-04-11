@@ -24,7 +24,10 @@ a{
     color: white;  
 }
 .proyect{
-    margin-left: 20%;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-left: 15px;
     
 }
 .menu_navbar{
@@ -49,6 +52,13 @@ a{
 }
 
 .menu_navbar a:hover::before {
+    content: "";
+    position: relative;
+    bottom: 0;
+    border: 2px solid rgb(255, 0, 0);
+  }
+
+  .menu_navbar button:hover::before {
     content: "";
     position: relative;
     bottom: 0;

@@ -6,14 +6,14 @@
         <i class="cv_julian_burbano">CV Julian Burbano</i>
     </div>
     <div class="menu_navbar">
+      <div class="bottonsanda">
         <a routerLink="Perfil">{{ 'HEADER.PROFILE' | translate }}</a>
-        <a routerLink="" class="proyect"  [matMenuTriggerFor]="menu">{{ 'HEADER.PROJECTS' | translate }}</a>
-        
+        <button class="proyect"  [matMenuTriggerFor]="menu">{{ 'HEADER.PROJECTS' | translate }}</button>
+      </div>
         <mat-menu #menu="matMenu" yPosition="above" class="custom-class">
             <button mat-menu-item (click)="Navegar('dibujo_mecanico')"> <i class="bi bi-nut"></i> {{ 'HEADER_PROJECTS.DRAW_MECHANICS' | translate }}</button>
             <button mat-menu-item (click)="Navegar('programation')"> <i class="bi bi-braces"></i> {{ 'HEADER_PROJECTS.PROGRAMATION' | translate }}</button>
-            <button mat-menu-item (click)="Navegar('automation')"><i class="bi bi-robot"></i> {{ 'HEADER_PROJECTS.AUTOMATION' | translate }}</button>
-          </mat-menu>
+            </mat-menu>
         
     </div>
     <div class="contact">

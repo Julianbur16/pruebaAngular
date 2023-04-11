@@ -1,1 +1,63 @@
-<p>body-programation works!</p>
+<div class="menu_ensambleparts">
+    <div [class]="selection_button"><button (click)="programationweb()">Web</button></div>
+    <div [class]="selection_button1"><button (click)="programationAndroid()">Android</button></div>
+    <div [class]="selection_button2"><button (click)="programationsystem()">{{ 'BODY_PROGRA.EMBEDDED' | translate }}</button></div>
+    <div [class]="selection_button3"><button (click)="programationDeep()">Deep y machine learning</button></div>
+</div>
+<br><br>
+
+<div class="text-center" *ngIf="loading">
+    <br><br><br><br><br><br>
+    <div class="spinner-border sizespinner" role="status">
+      <span class="sr-only"></span>
+    </div>
+  </div>
+  
+<div class="container" *ngIf="this.translate.store.currentLang=='es'">
+    <div class="row">
+        <div class="col column" *ngFor="let descripcions of descripciones, let i = index">
+            <div><img [src]="url[i]" alt=""></div>
+            <br><br>
+            <h6>{{titlees[i]}}</h6>
+            <p>{{descripcions}} </p>
+            <div *ngIf="(i + 1) % 4 === 0"><br></div>
+    </div>
+    </div>
+</div>
+
+<div class="container" *ngIf="this.translate.store.currentLang=='en'">
+    <div class="row">
+        <div class="col" *ngFor="let descripcions of descripcionen, let i = index">
+            <img [src]="url[i]" alt="" width="200" height="200">
+            <br><br>
+            <h6>{{titleen[i]}}</h6>
+            <p>{{descripcions}} </p>
+            <div *ngIf="(i + 1) % 4 === 0"><br></div>
+    </div>
+    </div>
+</div>
+
+<div class="container" *ngIf="this.translate.store.currentLang=='pt'">
+    <div class="row">
+        <div class="col" *ngFor="let descripcions of descripcionpt, let i = index">
+            <img [src]="url[i]" alt="" width="200" height="200">
+            <br><br>
+            <h6>{{titlept[i]}}</h6>
+            <p>{{descripcions}} </p>
+            <div *ngIf="(i + 1) % 4 === 0"><br></div>
+    </div>
+    </div>
+</div>
+
+<div class="container" *ngIf="this.translate.store.currentLang=='fr'">
+    <div class="row">
+        <div class="col" *ngFor="let descripcions of descripcionfc, let i = index">
+            <img [src]="url[i]" alt="" width="200" height="200">
+            <br><br>
+            <h6>{{titlefc[i]}}</h6>
+            <p>{{descripcions}} </p>
+            <div *ngIf="(i + 1) % 4 === 0"><br></div>
+    </div>
+    </div>
+</div>
+

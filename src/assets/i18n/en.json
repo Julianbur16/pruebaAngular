@@ -52,7 +52,7 @@
 
       "HEADER_PROJECTS": {
         "DRAW_MECHANICS": "Mechanical drawing",
-        "PROGRAMATION": "Programation",
+        "PROGRAMATION": "Programming",
         "AUTOMATION":"Automation"
       },
 
@@ -71,6 +71,30 @@
         "MESSAGE_SENT": "Message sent",
         "TEXT_MAIN": "Your message has been sent correctly",
         "TEXT": "Check the confirmation in the typed email"
+      },
+
+      "MODAL_CHATGPT":{
+        "HELLO":"HELLO",
+        "INDICATIONS":"My name is Nuk and I am trained to answer questions about Julian's biography, curriculum, and projects. I hope to answer all your doubts. If you want the answer in a language other than Spanish, please specify it in the message. If you wish for a direct approach, you can send a message on the top right of this website. Thank you.",
+        "MESSAGECHAT":"Message",
+        "RESPONSE":"Answer"
+      },
+
+      "BODY_MECHA":{
+        "ASSEMBLY": "Assemblies",
+        "PART": "Parts"
+      },
+
+      "BODY_PROGRA":{
+        "EMBEDDED": "Embedded systems"
+      },
+
+      "BODY_SLIDER":{
+        "WEB":"Web programming",
+        "AUTO":"Industrial automation and control",
+        "EMBEDDED":"Programming for embedded systems",
+        "CAD":"Mechanical design in CAD software",
+        "DEEP":"Deep learning and Machine learning in artificial vision"
       }
 
   }

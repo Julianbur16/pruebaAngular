@@ -52,8 +52,8 @@
       },
 
       "HEADER_PROJECTS": {
-        "DRAW_MECHANICS": "Dibujo mecanico",
-        "PROGRAMATION": "Programación",
+        "DRAW_MECHANICS": "Desenho mecânico",
+        "PROGRAMATION": "Programação",
         "AUTOMATION":"Automatización"
       },
 
@@ -73,5 +73,29 @@
         "MESSAGE_SENT": "Mensagem enviada",
         "TEXT_MAIN": "Sua mensagem foi enviada corretamente",
         "TEXT": "Confira a confirmação no e-mail digitado"
+      },
+
+      "MODAL_CHATGPT":{
+        "HELLO":"OLÁ",
+        "INDICATIONS":"Meu nome é Nuk e estou capacitado para responder perguntas sobre a biografia, currículo e projetos do Julian. Espero esclarecer todas as suas dúvidas. Se você deseja a resposta em um idioma diferente do espanhol, por favor, especifique na mensagem. Se desejar uma abordagem direta, pode enviar uma mensagem na parte superior direita deste site. Obrigado.",
+        "MESSAGECHAT":"Mensagem",
+        "RESPONSE":"Responder"
+      },
+
+      "BODY_MECHA":{
+        "ASSEMBLY": "Montagens",
+        "PART": "Peças"
+      },
+
+      "BODY_PROGRA":{
+        "EMBEDDED": "Sistemas embarcados"
+      },
+
+      "BODY_SLIDER":{
+        "WEB":"Programação da Web",
+        "AUTO":"Automação e controle industrial",
+        "EMBEDDED":"Programação para sistemas embarcados",
+        "CAD":"Projeto mecânico em software CAD",
+        "DEEP":"Deep Learning e Machine Learning em visão artificial"
       }
 }

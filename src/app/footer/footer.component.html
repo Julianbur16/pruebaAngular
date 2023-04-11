@@ -21,10 +21,10 @@
         <p>{{ 'FOOTER.LANGUAGE' | translate }}: </p>
         <hr>
         <ul [class.list_language]="style_languges">
-            <a routerLink="" (click)="cl_selection_languge(1)"><li [class.select_laguage]="selection_language1">{{ 'FOOTER.LANGUAGE1' | translate }}</li></a>
-            <a routerLink="" (click)="cl_selection_languge(2)"><li [class.select_laguage]="selection_language2">{{ 'FOOTER.LANGUAGE2' | translate }}</li></a>
-            <a routerLink="" (click)="cl_selection_languge(3)"><li [class.select_laguage]="selection_language3">{{ 'FOOTER.LANGUAGE3' | translate }}</li></a>
-            <a routerLink="" (click)="cl_selection_languge(4)"><li [class.select_laguage]="selection_language4">{{ 'FOOTER.LANGUAGE4' | translate }}</li></a>
+            <a (click)="cl_selection_languge(1)"><li [class.select_laguage]="selection_language1">{{ 'FOOTER.LANGUAGE1' | translate }}</li></a>
+            <a (click)="cl_selection_languge(2)"><li [class.select_laguage]="selection_language2">{{ 'FOOTER.LANGUAGE2' | translate }}</li></a>
+            <a (click)="cl_selection_languge(3)"><li [class.select_laguage]="selection_language3">{{ 'FOOTER.LANGUAGE3' | translate }}</li></a>
+            <a (click)="cl_selection_languge(4)"><li [class.select_laguage]="selection_language4">{{ 'FOOTER.LANGUAGE4' | translate }}</li></a>
         </ul>
     </div>
 </div>
