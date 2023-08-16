@@ -1,0 +1,23 @@
+*{
+    justify-content: center;
+    text-align: center;
+}
+
+.small{
+    font-size: 1.3vw;
+}
+
+.btnActions1{
+    margin-right: 0.4vw;
+    font-size: 1.3vw;
+}
+.btnActions2{
+    margin-left: 0.4vw;
+    font-size: 1.3vw;
+}
+
+.transpaternts{
+    background: rgba(251, 251, 251, 0.693);
+    color: black;
+    border-width: 2px;
+}
